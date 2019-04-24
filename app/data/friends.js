@@ -1,33 +1,17 @@
 var friendArray = [{
-        "name":"Gulia",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-        "scores":[
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
-          ]
-      },
-      {
-        "name":"Shulia",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-        "scores":[
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5
+        name: "Julia",
+        photo: "https://media3.giphy.com/media/nbMyAHO0PAVxJ5uJmG/200w.webp?cid=790b76115cbfd9fd2f6e485136efcd16",
+        scores :[
+            "5",
+            "5",
+            "5",
+            "5",
+            "5",
+            "5",
+            "5",
+            "5",
+            "5",
+            "5"
           ]
       }
 ];

@@ -19,64 +19,313 @@
     <div class="container">
         <div class="jumbotron jumbotron-fluid bg-info">
             <div class="container text-white ">
-                <h1 class="display-4"><i class="fas fa-user-friends" aria-hidden="true"></i> Friend Finder Survey</h1>
-                        </div>
+                <h1 class="display-4"><i class="fas fa-user-friends" aria-hidden="true"></i> Friend Finder</h1>
+            </div>
         </div>
     </div>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <!-- Reservation Page -->
+
                 <div class="card">
-                    <div class="card-header">Title Here</div>
+                    <div class="card-header bg-info text-white">Friend Finder Survey</div>
                     <div class="card-body">
                         <form role="form">
                             <h2>Personal Info</h2>
                             <div class="form-group">
                                 <label for="friend-name">Name</label>
-                                <input type="text" class="form-control" id="friend-name">
+                                <input type="text" class="form-control" id="friend-name" required>
                             </div>
                             <div class="form-group">
                                 <label for="friend-image">Link to Photo</label>
-                                <input type="text" class="form-control" id="friend-image">
+                                <input type="text" class="form-control" id="friend-image" required>
                             </div>
 
                             <h2>Questions</h2>
+                            <!--Question 1-->
                             <div class="form-group">
-                                <label for="q1">1. Purple is the best </label> <br>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="q1" id="inlineRadio1" value="1">
-                                    <label class="form-check-label" for="inlineRadio1">1 (Strongly Disagree)</label>
+                                <label for="q1">1. Purple is always the best color.</label> <br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="q1r5" value="5">
+                                    <label class="form-check-label" for="q1r5">5 (Strongly Agree)</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="q1" id="inlineRadio2" value="2">
-                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="q1r4" value="4">
+                                    <label class="form-check-label" for="q1r4">4</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="q1" id="inlineRadio3" value="3"
-                                        checked>
-                                    <label class="form-check-label" for="inlineRadio3">3 (Neutral)</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="q1r3" value="3" checked>
+                                    <label class="form-check-label" for="q1r3">3</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="q1" id="inlineRadio4" value="4">
-                                    <label class="form-check-label" for="inlineRadio4">4</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="q1r2" value="2">
+                                    <label class="form-check-label" for="q1r2">2</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="q1" id="inlineRadio5" value="5">
-                                    <label class="form-check-label" for="inlineRadio5">5 (Strongly Agree)</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="q1r1" value="1">
+                                    <label class="form-check-label" for="q1r1">1 (Strongly Disagree)</label>
                                 </div>
                             </div>
 
+                            <!--Question 2-->
+                            <div class="form-group">
+                                <label for="q2">2. Chocolate chip cookes and beer go really well together.</label> <br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="q2r5" value="5">
+                                    <label class="form-check-label" for="q2r5">5 (Strongly Agree)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="q2r4" value="4">
+                                    <label class="form-check-label" for="q2r4">4</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="q2r3" value="3" checked>
+                                    <label class="form-check-label" for="q2r3">3</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="q2r2" value="2">
+                                    <label class="form-check-label" for="q2r2">2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="q2r1" value="1">
+                                    <label class="form-check-label" for="q2r1">1 (Strongly Disagree)</label>
+                                </div>
+
+                            </div>
+                            <!--Question 3-->
+                            <div class="form-group">
+                                <label for="q3">3. It's on the CW, so it must be good.</label> <br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="q3r5" value="5">
+                                    <label class="form-check-label" for="q3r5">5 (Strongly Agree)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="q3r4" value="4">
+                                    <label class="form-check-label" for="q3r4">4</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="q3r3" value="3" checked>
+                                    <label class="form-check-label" for="q3r3">3</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="q3r2" value="2">
+                                    <label class="form-check-label" for="q3r2">2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="q3r1" value="1">
+                                    <label class="form-check-label" for="q3r1">1 (Strongly Disagree)</label>
+                                </div>
+                            </div>
+                            <!--Question 4-->
+                            <div class="form-group">
+                                <label for="q4">4. Mushrooms belong on pizza.</label> <br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="q4r5" value="5">
+                                    <label class="form-check-label" for="q4r5">5 (Strongly Agree)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="q4r4" value="4">
+                                    <label class="form-check-label" for="q4r4">4</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="q4r3" value="3" checked>
+                                    <label class="form-check-label" for="q4r3">3</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="q4r2" value="2">
+                                    <label class="form-check-label" for="q4r2">2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="q4r1" value="1">
+                                    <label class="form-check-label" for="q4r1">1 (Strongly Disagree)</label>
+                                </div>
+                            </div>
+                            <!--Question 5-->
+                            <div class="form-group">
+                                <label for="q5">5. Doing crafty things like knitting and quilting is great fun!</label>
+                                <br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="q5r5" value="5">
+                                    <label class="form-check-label" for="q5r5">5 (Strongly Agree)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="q5r4" value="4">
+                                    <label class="form-check-label" for="q5r4">4</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="q5r3" value="3" checked>
+                                    <label class="form-check-label" for="q5r3">3</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="q5r2" value="2">
+                                    <label class="form-check-label" for="q5r2">2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="q5r1" value="1">
+                                    <label class="form-check-label" for="q5r1">1 (Strongly Disagree)</label>
+                                </div>
+                            </div>
+                            <!--Question 6-->
+                            <div class="form-group">
+                                <label for="q6">6. Your spirit animal is likely an owl.</label> <br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q6" id="q6r5" value="5">
+                                    <label class="form-check-label" for="q6r5">5 (Strongly Agree)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q6" id="q6r4" value="4">
+                                    <label class="form-check-label" for="q6r4">4</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q6" id="q6r3" value="3" checked>
+                                    <label class="form-check-label" for="q6r3">3</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q6" id="q6r2" value="2">
+                                    <label class="form-check-label" for="q6r2">2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q6" id="q6r1" value="1">
+                                    <label class="form-check-label" for="q6r1">1 (Strongly Disagree)</label>
+                                </div>
+                            </div>
+                            <!--Question 7-->
+                            <div class="form-group">
+                                <label for="q7">7. Reading the book is more fun than watching the movie. </label> <br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q7" id="q7r5" value="5">
+                                    <label class="form-check-label" for="q7r5">5 (Strongly Agree)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q7" id="q7r4" value="4">
+                                    <label class="form-check-label" for="q7r4">4</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q7" id="q7r3" value="3" checked>
+                                    <label class="form-check-label" for="q7r3">3</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q7" id="q7r2" value="2">
+                                    <label class="form-check-label" for="q7r2">2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q7" id="q7r1" value="1">
+                                    <label class="form-check-label" for="q7r1">1 (Strongly Disagree)</label>
+                                </div>
+                            </div>
+                            <!--Question 8-->
+                            <div class="form-group">
+                                <label for="q8">8. You are more of a dog person than a cat person. </label> <br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q8" id="q8r5" value="5">
+                                    <label class="form-check-label" for="q8r5">5 (Strongly Agree)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q8" id="q8r4" value="4">
+                                    <label class="form-check-label" for="q8r4">4</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q8" id="q8r3" value="3" checked>
+                                    <label class="form-check-label" for="q8r3">3</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q8" id="q8r2" value="2">
+                                    <label class="form-check-label" for="q8r2">2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q8" id="q8r1" value="1">
+                                    <label class="form-check-label" for="q8r1">1 (Strongly Disagree)</label>
+                                </div>
+                            </div>
+                            <!--Question 9-->
+                            <div class="form-group">
+                                <label for="q9">9. Dandelions count as flowers. </label> <br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q9" id="q9r5" value="5">
+                                    <label class="form-check-label" for="q9r5">5 (Strongly Agree)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q9" id="q9r4" value="4">
+                                    <label class="form-check-label" for="q9r4">4</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q9" id="q9r3" value="3" checked>
+                                    <label class="form-check-label" for="q9r3">3</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q9" id="q9r2" value="2">
+                                    <label class="form-check-label" for="q9r2">2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q9" id="q9r1" value="1">
+                                    <label class="form-check-label" for="q9r1">1 (Strongly Disagree)</label>
+                                </div>
+                            </div>
+
+                            <!--Question 10-->
+                            <div class="form-group">
+                                <label for="q10">10. Unicorns are real. </label> <br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q10" id="q10r5" value="5">
+                                    <label class="form-check-label" for="q10r5">5 (Strongly Agree)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q10" id="q10r4" value="4">
+                                    <label class="form-check-label" for="q10r4">4</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q10" id="q10r3" value="3"
+                                        checked>
+                                    <label class="form-check-label" for="q10r3">3</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q10" id="q10r2" value="2">
+                                    <label class="form-check-label" for="q10r2">2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q10" id="q10r1" value="1">
+                                    <label class="form-check-label" for="q10r1">1 (Strongly Disagree)</label>
+                                </div>
+                            </div>
                             <button type="submit" class="btn btn-info submit">Submit</button>
-
+                        </form>
                     </div>
-
-                    </form>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="friendMatchModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Meet your new BFF!!!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6 id="matchName"></h6>
+                    <img id="matchImage" src="" alt="friend">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p><a href="/api/friends" target="_blank">API Friends List</a> | <a
@@ -86,9 +335,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -100,10 +347,58 @@
         $(".submit").on("click", function (event) {
             event.preventDefault();
 
-            var newFriend = $("input[name='q1']:checked").val();
-            console.log(newFriend);
-        });
+            var name = $("#friend-name").val().trim()
+            var photoUrl = $("#friend-image").val().trim()
 
+            if (name.length > 0 && photoUrl.length > 0) {
+
+                var newFriend = {
+                    name: name,
+                    photo: photoUrl,
+                    scores: [
+                        $("input[name='q1']:checked").val(),
+                        $("input[name='q2']:checked").val(),
+                        $("input[name='q3']:checked").val(),
+                        $("input[name='q4']:checked").val(),
+                        $("input[name='q5']:checked").val(),
+                        $("input[name='q6']:checked").val(),
+                        $("input[name='q7']:checked").val(),
+                        $("input[name='q8']:checked").val(),
+                        $("input[name='q9']:checked").val(),
+                        $("input[name='q10']:checked").val()
+                    ]
+                }
+
+                console.log(newFriend);
+
+                $.post("/api/friends", newFriend,
+                    function (data) {
+
+                        // Clear the form when submitting
+                        $("#friend-name").val("");
+                        $("#friend-image").val("");
+                        $("#q1r3").prop("checked", true);
+                        $("#q2r3").prop("checked", true);
+                        $("#q3r3").prop("checked", true);
+                        $("#q4r3").prop("checked", true);
+                        $("#q5r3").prop("checked", true);
+                        $("#q6r3").prop("checked", true);
+                        $("#q7r3").prop("checked", true);
+                        $("#q8r3").prop("checked", true);
+                        $("#q9r3").prop("checked", true);
+                        $("#q10r3").prop("checked", true);
+
+                        //Display the results in the modal
+                        $("#matchName").text(data.name);
+                        $("#matchImage").attr("src", data.photo);
+                        $("#friendMatchModal").modal("toggle");
+                    });
+            }
+            else {
+                alert("Please fill out all the fields before submitting.")
+            }
+
+        });
     </script>
 </body>
 

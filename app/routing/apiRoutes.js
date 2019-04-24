@@ -8,38 +8,32 @@ module.exports = function(app) {
     res.json(friendData);
   });
 
-  
+  //Add new friend to the array after finding the perfect match
   app.post("/api/friends", function(req, res) {
       var friend = req.body; 
       var matchingScore = 0; 
       var matchingfriend; 
       var totalDifference = 0; 
 
-      //for each friend, compare the scores
+      //for each friend, compare scores
       for (var i = 0; i<friendData.length; i++){
-        console.log("checking match for " + friendData[i].name)
+        // console.log("checking match for " + friendData[i].name)
         for(var j = 0; j<friend.scores.length; j++) {
           var difference = parseInt(friend.scores[j]) - parseInt(friendData[i].scores[j]); 
-          // console.log(friend.scores[j]);
-          // console.log(friendData[i].scores[j]);
-          // console.log(difference)
-
           totalDifference += Math.abs(difference);
-          console.log(totalDifference)
+          // console.log(totalDifference)
         } 
         //Return the first lowest match 
-        if (totalDifference < matchingScore || matchingScore === 0) {
+        if (totalDifference < matchingScore || !matchingfriend) {
           matchingScore = totalDifference; 
           matchingfriend = friendData[i]; 
         }    
-        totalDifference = 0;     
+        totalDifference = 0;   
+        // console.log(matchingfriend)  
       }
       friendData.push(req.body); 
       res.json(matchingfriend);
-      console.log(matchingfriend);
+      // console.log(matchingfriend);
   });
 
-//   app.post("/api/deletefriends", function(req, res) {
-//     friendData.length = 0;
-//   });
 };
